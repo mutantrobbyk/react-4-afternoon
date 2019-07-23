@@ -23,7 +23,7 @@ componentDidMount() {
     ))
     return (
       <div className="box">
-        <h4 onClick={() => this.props.history.goBack()}>Back</h4>
+        <h4 className='backbutton' onClick={() => this.props.history.goBack()}>&lt;Back</h4>
         <h1>{this.props.match.params.class}</h1>
         <h2>ClassList:</h2>
         {students}
